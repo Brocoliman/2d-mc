@@ -1,0 +1,66 @@
+JSON: 1/21 - 1/21
+- Learn to import and use JSON data
+
+Reorganize asset images: 1/21 - 1/21
+- Create thumbnail copies for every item
+- Create block texture copies of every item that can be placed
+- Make drawBlock use block texture copy
+- Make drawHotbar use thumbnail copy
+
+Inventory use: 1/21 - 1/27
+- Display blocks left
+- Select which block to place; unplaceable blocks will not place
+- Placing blocks will decrease by 1
+- Breaking blocks will not do anything yet
+
+Load information in startGame: 1/21 - 1/27
+- Make PlayerData function to load player inventory and position and velocities
+
+Create Breaking mechanic: 1/21 - 2/6
+- Move more complex key activated functions to their own section (especially breaking blocks)
+- Import "cracks" images
+- Handle continuous key holding
+
+Inventory limit && OOP optimization: 2/9 - 2/9
+
+Objectify World: 2/14 - 2/19
+
+Passable blocks: 2/9 - 2/19
+- Do not test collision based on is_air, rename to passable
+
+=====
+
+Allow World storing as file: 2/19 -
+
+Terrain generation: 2/19 -
+
+Ore generation: 1/21 -
+
+1st Phase Make Breaking Tempo Tiers: 2/19 -
+
+Item drops: 1/21 -
+- Array of strings, showing loose items and where they are scattered
+- Update itemmetadata to show what each block drops
+- Display them hovering w/ sin equation
+- Pickup by player
+
+Trees: 2/9
+- Make logs passable by generation default
+
+Load wrld information in startGame: 1/21 -
+- Create world json to keep world info
+- Make LoadWorld function to load world information
+
+Tools: 2/9 -
+- Each item has default break time
+- Using tools with specified time
+- Make tool on player rotate with player direction
+
+Block Icon generation: 1/26 -
+- Use Matrices to generate block icon (skewed on 3 sides)
+
+Create Placing mechanic: 1/21 -
+- Check when click place: must be within distance of player, and cannot be thru blocks
+
+Pathfinding system: 1/21 -
+- Pathfind player local region using BFS, generate n subsequent layers after penetrating blocks
